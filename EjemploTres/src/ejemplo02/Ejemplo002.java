@@ -5,7 +5,7 @@
  */
 package ejemplo02;
 
-import org.apache.commons.lang3.RandomUtils;
+import org.apache.commons.lang3.ArrayUtils;
 
 /**
  *
@@ -14,8 +14,9 @@ import org.apache.commons.lang3.RandomUtils;
 public class Ejemplo002 {
     
     public static void main(String[] args) {
-        int v = RandomUtils.nextInt(20, 25);
+        int [] valores = {10, 1, 3, 4, 9};
+        boolean v = ArrayUtils.contains(valores, 9);
         
-        System.out.printf("%d\n", v);
+        System.out.printf("%s\n", v);
     }
 }
